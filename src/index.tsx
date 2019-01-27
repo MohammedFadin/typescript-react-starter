@@ -1,7 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import App from "./components/App";
 
-export default class App extends React.Component {
+export default class Index extends React.Component {
   render() {
     return <Header />;
   }
@@ -13,4 +14,4 @@ export class Header extends React.Component {
   }
 }
 const ROOT = document.querySelector(".container");
-ReactDOM.render(<App />, ROOT);
+ReactDOM.render(<App appName="Fadin" version={1.0} />, ROOT);
